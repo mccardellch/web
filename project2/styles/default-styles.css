@@ -1,0 +1,61 @@
+body{
+    background-color: aliceblue;
+    font-family: tahoma, verdana, sans-serif;
+    font-size: 1.5em;
+}
+main{
+    display: flex;
+}
+canvas {
+    flex: 1;
+	margin-left: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+	background: #fafafa;
+}
+
+#controls{
+/*    margin-top: 20px;*/
+    width: 25%;
+    margin-left: 1rem;
+}
+#checks {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#volumeLabel{
+  margin-left: 1rem;
+}
+
+section{
+    margin-bottom: 1rem;
+}
+
+#playButton{
+  font-size: 1.2rem;
+  width: 6rem;
+}
+
+button[data-playing="yes"]:after{
+  content: "Pause";
+}
+
+button[data-playing="no"]:after{
+  content: "Play";
+}
+
+#fsButton{
+  font-size: 1.2rem;
+  width: 8rem;
+}
+
+/*continue later, */
+@media only screen and (max-width : 1100px){
+    main{
+        display: inherit;
+    }
+    canvas{
+        flex: none;
+    }
+}

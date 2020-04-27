@@ -1,0 +1,70 @@
+html{
+    background-color: lightblue;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    padding-top: 10px;
+}
+
+h1, h3{
+    margin: 10px;
+}
+
+#canvas{
+    background-color: black;
+    border: 2px solid black;
+    display: inline-block;
+    margin: auto;
+    padding:0;
+}
+
+#shoot{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.firework{
+    display: block;
+    margin: 10px 0 10px 0;
+}
+
+#controls{
+    font-size: 1.5em;
+    margin: 20px;
+}
+#controls h5{
+    display: none;
+}
+
+.boat{
+    display: block;
+    margin-right: 20px; 
+}
+
+select{
+    font-size: 15px;
+    height: 30px;
+    width: 100px;
+}
+
+#info{
+    font-size: 20px;
+    width: 800px;
+}
+#info h3{
+    margin: 0 0 10px 40px;
+}
+
+#phyllotaxis p{
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+a:hover, a:hover:visited{
+    color: yellow;
+}
+a:visited{
+    color:purple;
+}
+

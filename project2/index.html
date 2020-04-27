@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Project 2</title>
+	<link href="styles/default-styles.css" type="text/css" rel="stylesheet" />
+	<script src="./src/loader.js" type="module"></script>
+</head>
+<body>
+<main>
+	<div id="controls">
+        <section id="description">
+            <h1>Audio Visualizer</h1>
+            <h3>Choose your song</h3>
+            <h3>Mix it up!</h3>
+        </section>
+		<section>
+			<button id="playButton" data-playing="no"></button>
+			<button id="fsButton">Full Screen</button><br />
+                        
+			<label>Track: 
+				<select id="trackSelect">
+					<option value="media/New Adventure Theme.mp3" selected>New Adventure Theme</option>
+					<option value="media/Peanuts Theme.mp3">Peanuts Theme</option>
+					<option value="media/The Picard Song.mp3">The Picard Song</option>
+					<option value="media/Coming For You.mp3">Coming For You</option>
+				</select>
+			</label><br />
+            
+            <label>Boombox Color: 
+				<select id="colorSelect">
+					<option value="red" selected>Red</option>
+					<option value="blue">Blue</option>
+					<option value="green">Green</option>
+					<option value="yellow">Yellow</option>
+				</select>
+			</label>            
+		</section>
+		
+		<section id="sliders">
+			<label for="volumeSlider">Volume:</label><input type="range" id="volumeSlider" min="0" max="2" value="1" step="0.01">
+			<span id="volumeLabel">-</span><br />
+            
+            <label for="bassSlider">Bass:</label><input type="range" id="bassSlider" min="-40" max="40" value="0" step="1">
+			<span id="bassLabel">-</span><br />
+            
+            <label for="trebleSlider">Treble:</label><input type="range" id="trebleSlider" min="-40" max="1" value="0" step="1">
+			<span id="trebleLabel">-</span><br />
+		</section>
+        
+        <section id="checks">
+            <span><label for="myCB">Project 2</label><input type="checkbox" id="myCB" checked></span><br />
+            <span><label for="gradientCB">Show Gradient</label><input type="checkbox" id="gradientCB" checked></span><br />
+            <span><label for="barsCB">Show Bars</label><input type="checkbox" id="barsCB" ></span><br />
+            <span><label for="circlesCB">Show Circles</label><input type="checkbox" id="circlesCB"></span><br />
+            <span><label for="noiseCB">Show Noise</label><input type="checkbox" id="noiseCB"></span><br />
+            <span><label for="invertCB">Invert Colors</label><input type="checkbox" id="invertCB"></span><br />
+            <span><label for="embossCB">Emboss Effect</label><input type="checkbox" id="embossCB"></span><br />
+        </section>
+	</div>
+    
+    <div><canvas width="1080" height="800"></canvas></div>
+</main>
+</body>
+</html>

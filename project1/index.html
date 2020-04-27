@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Fireworks!</title>
+    <link rel="stylesheet" href="project1/css/main.css">
+    <script src="project1/src/index.js"></script>
+    <script src="project1/src/player.js"></script>
+    <script src="project1/src/hhmLIB.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+<h1>Interactive Firework Shooter</h1>
+<canvas id='canvas'></canvas>
+<section id='controls'>
+    <h5>Controls</h5>
+    <button id='shoot' type='button'>Shoot Firework!</button>
+    
+    <label class='firework'>Firework Size: 
+        <input id='sizeSlider' type='range' min='2' max='10' value='2'>
+    </label>
+    
+    <label class='firework'> Firework Shape:
+        <select id="fireworkShapeChooser">
+            <option value="circle" selected>Circle</option>
+			<option value="spiral">Spiral</option>
+        	<option value="oval">Oval</option>
+        </select>
+    </label>
+    
+    <label class='firework'>Boat Color: 
+        <select id="boatColorChooser">
+            <option value="yellow" selected>Yellow</option>
+			<option value="red">Red</option>
+        	<option value="green">Green</option>
+        	<option value="brown">Brown</option>
+        </select>
+    </label>
+        
+</section>
+
+<section id='info'>
+    
+    <h3>Controls</h3>
+    <ul> 
+        <li>Press the 'A' and 'D' keys to move the ship!</li>
+        <li>Tap 'space' to shoot fireworks!</li>
+        <li>Or click the shoot button!</li>
+        <li>Change the size of firework</li>
+        <li>Choose firework in dropdown menu</li>
+    </ul>
+    
+    <div id='phyllotaxis'>
+        <h3>About</h3>
+        <p>This mini web application is based off of the math behind phyllotaxis, or the arrangement of lateral organs of plants. It uses the phyllotaxis equation to create the fireworks by calling a function at a set frame rate. Phyllotaxis is a very interesting subject and you can read more <a href="http://www.algorithmicbotany.org/papers/abop/abop-ch4.pdf">here</a>.<p>
+        <p>Created by Harry McCardell.</p>
+    </div>
+</section>
+</body>
+</html>
